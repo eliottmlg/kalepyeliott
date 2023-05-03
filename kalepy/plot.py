@@ -1568,6 +1568,7 @@ def dist2d(kde_data, ax=None, edges=None, weights=None, params=[0, 1], quantiles
             ax, points, pdf, quantiles=quantiles, smooth=smooth, upsample=upsample, pad=pad,
             cmap=contour_cmap, zorder=20, ls=ls, outline=outline,
         )
+        ax.clabel(_handle, inline=True, fontsize=10)
         if handle is None:
             handle = _handle.collections[-1]
 
